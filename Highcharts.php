@@ -114,9 +114,12 @@ use conquer\helpers\Json;
             $globalOptions = $this->globalOptions;
             if (!isset($globalOptions['lang'])) {
                 $language = $this->language ? $this->language : \Yii::$app->language;
-                $i18n = dirname(__FILE__).'/'.$language.'.php';
-                if (file_exists($i18n)) {
-                    $globalOptions['lang'] = require($i18n); 
+                $language = explode('-', $language)[0];
+                if ($language != 'en') {
+                    $i18n = dirname(__FILE__).'/'.$language.'.php';
+                    if (file_exists($i18n)) {
+                        $globalOptions['lang'] = require($i18n); 
+                    }
                 }
             }
             $globalOptions = Json::encode($globalOptions);
