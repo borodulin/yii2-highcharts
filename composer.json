@@ -8,7 +8,7 @@
     "authors": [
         {
             "name": "Andrey Borodulin",
-            "email": "borodulin@gmail.com",
+            "email": "borodulin@gmail.com"
         }
     ],
     "support": {
@@ -19,7 +19,7 @@
         "branch-alias": {
           "dev-master": "1.0.0.x-dev"
         }
-      },
+     },
     "require": {
     	"php": ">=5.4.0",
     	"yiisoft/yii2": "*",
