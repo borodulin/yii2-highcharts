@@ -1,0 +1,33 @@
+{
+    "name": "conquer/highcharts",
+    "description": "Yii2 highcharts",
+    "keywords": ["yii2", "extension", "widget", "highcharts"],
+    "homepage": "https://github.com/borodulin/yii2-highcharts",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Borodulin",
+            "email": "borodulin@gmail.com",
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/borodulin/yii2-highcharts/issues",
+        "source": "https://github.com/borodulin/yii2-highcharts"
+    },
+    "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.0.x-dev"
+        }
+      },
+    "require": {
+    	"php": ">=5.4.0",
+    	"yiisoft/yii2": "*",
+    	"bower-asset/highcharts-release": "~4.1.4"
+    },
+	"autoload": {
+		"psr-4": {
+			"conquer\\highcharts\\": ""
+		}
+	}
+}
