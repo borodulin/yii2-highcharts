@@ -1,34 +1,58 @@
 {
     "name": "conquer/highcharts",
-    "description": "Yii2 highcharts",
-    "keywords": ["yii2", "extension", "widget", "highcharts"],
+    "description": "Highcharts widget for Yii2",
+    "keywords": [
+        "yii2",
+        "extension",
+        "widget",
+        "highcharts",
+        "chart"
+    ],
     "homepage": "https://github.com/borodulin/yii2-highcharts",
     "type": "yii2-extension",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/borodulin/yii2-highcharts/issues",
+        "source": "https://github.com/borodulin/yii2-highcharts"
+    },
     "authors": [
         {
             "name": "Andrey Borodulin",
             "email": "borodulin@gmail.com"
         }
     ],
-    "support": {
-        "issues": "https://github.com/borodulin/yii2-highcharts/issues",
-        "source": "https://github.com/borodulin/yii2-highcharts"
-    },
     "extra": {
         "branch-alias": {
-          "dev-master": "1.1.1.x-dev"
+            "dev-master": "2.0.x-dev"
         }
-     },
-    "require": {
-    	"php": ">=5.4.0",
-    	"yiisoft/yii2": "*",
-        "conquer/helpers": "*",
-    	"bower-asset/highcharts-release": "~4.1.8"
     },
-	"autoload": {
-		"psr-4": {
-			"conquer\\highcharts\\": ""
-		}
-	}
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "yiisoft/yii2": "~2.0.14",
+        "bower-asset/highcharts-release": "^13.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "conquer\\highcharts\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "conquer\\highcharts\\tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
 }
